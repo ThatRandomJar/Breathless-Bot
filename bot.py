@@ -1,4 +1,5 @@
 import discord
+import os
 from discord import Permissions
 from discord.ext import commands
 import random
