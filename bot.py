@@ -73,7 +73,7 @@ async def _8ball(ctx, *, question):
                  "Not really.",
                  "Yes.",
                  "Signs point to yes.",
-                 "Reply hazy, try again.",
+                 "Not in the mood rn, ask later.",
                  "Ask again later.",
                  "Better not tell you now.",
                  "Cannot predict now.",
@@ -81,7 +81,7 @@ async def _8ball(ctx, *, question):
                  "Don't count on it.",
                  "My reply is no.",
                  "My sources say no.",
-                 "Outlook not so good.",
+                 "Yesn't",
                  "Very doubtful."]
     embedVar = discord.Embed(title="Tile", description=responses, color=0x00ff00)
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
