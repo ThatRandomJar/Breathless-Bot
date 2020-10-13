@@ -87,4 +87,6 @@ async def _8ball(ctx, *, question):
                  "Very doubtful."]
     embedVar = discord.Embed(title="Tile", description=responses, color=0x00ff00)
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
-client.run(os.environ.get['DISCORD_BOT_SECRET'])
+
+token = os.environ.get('DISCORD_BOT_SECRET')
+client.run(token)
