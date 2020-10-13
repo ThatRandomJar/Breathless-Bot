@@ -6,6 +6,8 @@ import random
 from discord.ext.commands import has_role
 from discord.ext.commands import has_guild_permissions
 from discord.ext.commands import CheckFailure
+from keep_alive import keep_alive
+
 
 client = commands.Bot(command_prefix = '.')
 
@@ -85,4 +87,4 @@ async def _8ball(ctx, *, question):
                  "Very doubtful."]
     embedVar = discord.Embed(title="Tile", description=responses, color=0x00ff00)
     await ctx.send(f'Question: {question}\nAnswer: {random.choice(responses)}')
-client.run(os.environ['discord_token'])
+client.run(os.environ.get['DISCORD_BOT_SECRET'])
