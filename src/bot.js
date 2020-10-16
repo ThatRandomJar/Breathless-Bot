@@ -2,6 +2,7 @@ require("dotenv").config();
 
 const { Client, Message } = require("discord.js");
 const client = new Client();
+const keep_alive = require('./keep_alive.js')
 
 const PREFIX = ".";
 
